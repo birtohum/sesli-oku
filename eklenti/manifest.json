@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Sesli Oku: Türkçe sayfa okuyucu",
+  "short_name": "Sesli Oku",
+  "version": "0.1.0",
+  "description": "Sayfanın asıl metnini Türkçe sesle okur, okunan yeri vurgular; büyük yazı ve yüksek karşıtlık. Hiçbir veri dışarı gönderilmez.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {"default_popup": "panel.html", "default_title": "Sesli Oku"},
+  "background": {"service_worker": "arkaplan.js"},
+  "commands": {
+    "oku": {"suggested_key": {"default": "Alt+Shift+O"}, "description": "Okumayı başlat ya da duraklat"},
+    "sonraki": {"suggested_key": {"default": "Alt+Shift+N"}, "description": "Sonraki paragraf"},
+    "onceki": {"suggested_key": {"default": "Alt+Shift+B"}, "description": "Önceki paragraf"},
+    "gorunum": {"suggested_key": {"default": "Alt+Shift+K"}, "description": "Büyük yazı ve yüksek karşıtlık"}
+  },
+  "icons": {"128": "simge.png"}
+}
